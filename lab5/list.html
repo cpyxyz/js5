@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Employee</title>
+  <script src="src/controller/initiallize.js"></script>
+  <script src="src/model/employee.js"></script>
+  <script src="src/view/list.js"></script>
+  <script>
+    window.addEventListener('load', init.view.listEmployees.setupUI);
+  </script>
+  <style>
+    body {
+      background-color: lightcyan;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>List the Employees</h1>
+    <table id="employees" border="1">
+      <thead>
+        <tr>
+          <th> ID </th>
+          <th> Name </th>
+          <th> Department </th>
+          <th> Date </th>
+          <th> Status </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <nav><a href="index.html">Main Menu</a></nav>
+  </center>
+
+</body>
+
+</html>

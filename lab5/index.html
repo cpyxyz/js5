@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Employee</title>
+  <script src="src/controller/initiallize.js"></script>
+  <script src="src/model/employee.js"></script>
+  <script src="src/view/create.js"></script>
+  <script>
+    window.addEventListener('load', init.view.createEmployee.setupUI);
+  </script>
+  <style>
+    body {
+      background-color: lightcyan;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Employee Attendence System</h1>
+    <form id="Employee">
+      <p>
+        <label><b>Name</b><br><input type="text" name="ename" /></label>
+      </p>
+      <p>
+        <label><b>ID</b> <br><input type="text" name="empid" /></label>
+      </p>
+      <p>
+        <label><b>Date</b> <br> <input type="date" name="edate" /></label>
+      </p>
+      <p> <label><strong>Select Your Department</strong>
+          <br><select id="dept">
+            <option value="0">Select</option>
+            <option value="MCA">MCA</option>
+            <option value="Mechanical">M.E</option>
+            <option value="Computer Science">CS</option>
+            <option value="Electronics and Comunication">EC</option>
+          </select> <br>
+        </label>
+      </p>
+      <p>
+        <label><strong><b>Status:</b> </strong>
+          <br>
+          <input type="radio" name="atd" value="present" checked>Present</label>
+        <label> <input type="radio" name="atd" value="absent">Absent</label>
+      </p>
+      <p><button type="button" name="commit">Save</button></p>
+      <a href="list.html"><button type="button">List Employees</button></a>
+    </form>
+  </center>
+</body>
+
+</html>
